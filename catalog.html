@@ -5,64 +5,60 @@
     <title>Техномарт</title>
   </head>
   <body>
-  	<!--Хедер на три части внутри header.-->
     <header class="header">
-      <div class="container">
-      	<div class="header-logo"></div>
-      	<div class="search-box">
-      		<form action="#" method="post">
-      			<input type="text" name="search-text" value="Поиск:" id="search-field">
-      		</form>
-      	</div>
-      	<div class="bookmarks-block">
-          <a class="bookmarks" href="#">Закладки:</a>
+
+        <div class="index-header">
+            <div class="container">
+                <div class="header-logo"></div>
+                <div class="search-box">
+                    <form action="#" method="post">
+                        <label for="search-field">Поиск:</label>
+                        <input type="text" name="search-text" id="search-field">
+                    </form>
+                </div>
+                <a class="bookmarks" href="#">Закладки:</a>
+                <a class="cart" href="#">Корзина:</a>
+                <a class="buy" href="#">Оформить заказ</a>
+            </div>
         </div>
-        <div class="cart-block">
-          <a class="cart" href="#">Корзина:</a>
+
+        <div class="main-header">
+            <div class="container">
+                <div class="main-info">
+                    <p>Интернет-магазин строительных материалов и инструментов для ремонта.</p>
+                    <p><a href="tel:+78125550555">+7 (812) 555-05-55</a> г.Санкт-Петербург,ул. Б. Конешенная, д. 19/8</p>
+                    <div class="user-block">
+                        <a class="login" href="#">Войти</a>
+                        <a class="registration" href="#">Регистрация</a>
+                    </div>
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="buy-block">
-          <a class="buy" href="#">Оформить заказ</a>
-        </div>
-      </div>
-      <div class="container">
-      	<p>Интернет-магазин строительных материалов и инструментов для ремонта.</p>
-      	<p><a href="tel:+78125550555">+7 (812) 555-05-55</a> г.Санкт-Петербург,ул. Б. Конешенная, д. 19/8</p>
-      	<div class="user-block">
-      		<a class="user" href="#">Равшан Джамшутович</a>
-      		<a class="logout" href="#">Выйти</a>
-      		<ul>
-      			<li><a href="#">Мои заказы</a></li>
-      			<li><a href="#">Личный кабинет</a></li>
-      		</ul>
-      	</div>
-      </div>
-      <div class="container">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Главная</a>
-            </li>
-            <li>
-              <a href="#">Компания</a>
-            </li>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
     <!--Breadcrumbs-->
@@ -73,15 +69,11 @@
     		<li><a href="#">Инструмент</a></li>
     		<li><a href="#">Перфораторы</a></li>
     	</ul>
-    </div>
 
     <!--Mid heading for goods-->
-    <div class="container">
     	<div class="goods-name">Перфораторы</div>
-    </div>
     
     <!--goods section-->
-    <div class="container">
       <div class="goods-filters">
         <div class="goods-heading">
           <p>Фильтр:</p>
@@ -203,6 +195,15 @@
       </div>
     </div>
 
+
+    <div class="buy-window"> <!--hidden layer-->
+      <a class="exit-cross"><img src="#" alt="close"></a>
+      <img src="#" alt="">
+      <h2>Товар добавлен в корзину!</h2>
+      <a href="#">оформить заказ</a>
+      <a href="#">продолжить покупки</a>
+    </div>
+
     <!--about goods section-->
     <div class="grayish-bg">
       <div class="container">
@@ -211,64 +212,66 @@
       </div>
     </div>
 
-  	<div class="pre-footer">
-    	<div class="container">
-    		<div class="pre-footer-left-col">
-    			<div class="pre-footer-logo"></div>
-    		</div>
-    		<div class="pre-footer-right-col">
-    			<ul class="pre-footer-nav">
-    				<li>
-    					<a href="#">Компания</a>
-    				</li>
-    				<li>
-    					<a href="#">Новости</a>
-    				</li>
-    				<li>
-    					<a href="#">Каталог</a>
-    				</li>
-    				<li>
-    					<a href="#">Доставка</a>
-    				</li>
-    				<li>
-    					<a href="#">Контакты</a>
-    				</li>
-    			</ul>
+  	<footer>
+        <div class="footer-1">
+            <div class="container">
+                <div class="pre-footer-left-col">
+                    <div class="pre-footer-logo"></div>
+                </div>
+                <div class="pre-footer-right-col">
+                    <ul class="pre-footer-nav">
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
 
-    			<ul class="pre-footer-shop-nav">
-    				<li>
-    					<a href="#">Материалы</a>
-    				</li>
-    				<li>
-    					<a href="#">Техника</a>
-    				</li>
-    				<li>
-    					<a href="#">Инструмент</a>
-    				</li>
-    				<li>
-    					<a href="#">Спецпредложения</a>
-    				</li>
-    			</ul>
-    		</div>
-    	</div>
-    </div>
-    <footer>
-    	<div class="container">
-            <div class="footer-copyrights">
-                <p>&#169; 2010-2016 Компания «Техномарт»<br>Все права защищены</p>
+                    <ul class="pre-footer-shop-nav">
+                        <li>
+                            <a href="#">Материалы</a>
+                        </li>
+                        <li>
+                            <a href="#">Техника</a>
+                        </li>
+                        <li>
+                            <a href="#">Инструмент</a>
+                        </li>
+                        <li>
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nets">
-                <a href="#">Вконтакте</a>
-                <a href="#">Фейсбук</a>
-                <a href="#">Инстаграм</a>
-            </div>
-            <div class="footer-Feedback">
-                <p>Обратная связь:</p>
-                <a href="#">Plums.surf</a>
-            </div>
-            <div class="footer-maker">
-                <p>Разработано-</p>
-                <a href="#">Plums.surf</a>
+        </div>
+        <div class="footer-2">
+          <div class="container">
+                <div class="footer-copyrights">
+                    <p>&#169; 2010-2016 Компания «Техномарт»<br>Все права защищены</p>
+                </div>
+                <div class="footer-nets">
+                    <a href="#">Вконтакте</a>
+                    <a href="#">Фейсбук</a>
+                    <a href="#">Инстаграм</a>
+                </div>
+                <div class="footer-Feedback">
+                    <p>Обратная связь:</p>
+                    <a href="#">Plums.surf</a>
+                </div>
+                <div class="footer-maker">
+                    <p>Разработано-</p>
+                    <a href="#">Plums.surf</a>
+                </div>
             </div>
         </div>
     </footer>
